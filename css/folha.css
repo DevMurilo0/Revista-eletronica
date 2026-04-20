@@ -53,6 +53,8 @@ nav a {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  color: #000; /* 🔥 deixa preto */
+  text-decoration: none; /* garante que não tenha sublinhado */
 }
 
 /* Hover */
