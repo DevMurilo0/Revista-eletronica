@@ -61,7 +61,7 @@ img.cortina-esquerda {
   left: 0px;
   width: clamp(540px, 56vw, 740px);
   height: auto;
-  transform: translateX(-27%);
+  transform: translateX(-30%);
   z-index: 3;
 }
 
@@ -70,7 +70,7 @@ img.cortina-direita {
   right: 0px;
   width: clamp(540px, 56vw, 740px);
   height: auto;
-  transform: translateX(27%);
+  transform: translateX(30%);
   z-index: 3;
 }
 
