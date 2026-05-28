@@ -136,6 +136,19 @@ img.deco-maos {
   z-index: 0;
 }
 
+@media (max-width: 768px) {
+  img.deco-maos {
+    top: 380px;
+  }
+}
+
+@media (max-width: 480px) {
+  img.deco-maos {
+    top: 420px;
+    opacity: 0.4;
+  }
+}
+
 /* =====================
    HERO
 ===================== */
@@ -485,8 +498,8 @@ img.deco-maos {
   img.deco-relogio {
     display: block;
     width: 45vw;
-    left: -15px;
-    right: auto;
+    right: -15px;
+    left: auto;
     top: 68%;
   }
 
