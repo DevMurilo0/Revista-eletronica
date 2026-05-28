@@ -138,13 +138,13 @@ img.deco-maos {
 
 @media (max-width: 768px) {
   img.deco-maos {
-    top: 380px;
+    top: 500px;
   }
 }
 
 @media (max-width: 480px) {
   img.deco-maos {
-    top: 420px;
+    top: 550px;
     opacity: 0.4;
   }
 }
