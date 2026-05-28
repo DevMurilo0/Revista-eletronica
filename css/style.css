@@ -52,12 +52,14 @@ body::before {
 
 /* =====================
    CORTINAS
+   — left/right negativos grandes garantem que sempre toquem a borda
+   — width generoso para cobrir bem mesmo em telas intermediárias
 ===================== */
 
 img.cortina-esquerda {
   top: -30px;
   left: -140px;
-  width: clamp(400px, 42vw, 580px);
+  width: clamp(420px, 44vw, 600px);
   height: auto;
   z-index: 1;
 }
@@ -65,7 +67,7 @@ img.cortina-esquerda {
 img.cortina-direita {
   top: -30px;
   right: -140px;
-  width: clamp(400px, 42vw, 580px);
+  width: clamp(420px, 44vw, 600px);
   height: auto;
   z-index: 1;
 }
@@ -365,33 +367,25 @@ img.deco-maos {
 
   img.cortina-esquerda {
     left: -160px;
-    width: 38vw;
+    width: 42vw;
   }
 
   img.cortina-direita {
     right: -160px;
-    width: 38vw;
+    width: 42vw;
   }
 
-  img.deco-nuvem {
-    width: 28vw;
-  }
-
-  img.deco-rasagado {
-    width: 26vw;
-  }
+  img.deco-nuvem  { width: 28vw; }
+  img.deco-rasagado { width: 26vw; }
 
   img.deco-relogio {
     width: 28vw;
     right: 20px;
   }
 
-  img.deco-homem {
-    width: 15vw;
-  }
+  img.deco-homem { width: 15vw; }
 
   img.deco-maos {
-    width: 100%;
     top: 140px;
   }
 
@@ -412,54 +406,38 @@ img.deco-maos {
     font-size: 11px;
   }
 
-  /* Cortinas menores e mais pra borda */
   img.cortina-esquerda {
-    width: 42vw;
-    left: -80px;
+    width: 52vw;
+    left: -100px;
     top: -20px;
   }
 
   img.cortina-direita {
-    width: 42vw;
-    right: -80px;
+    width: 52vw;
+    right: -100px;
     top: -20px;
   }
 
-  /* Nuvem e rasgado menores */
-  img.deco-nuvem {
-    width: 32vw;
-  }
+  img.deco-nuvem    { width: 32vw; }
+  img.deco-rasagado { width: 30vw; }
 
-  img.deco-rasagado {
-    width: 30vw;
-  }
-
-  /* Relógio menor, mais perto da borda */
   img.deco-relogio {
     width: 32vw;
     right: -10px;
     top: 62%;
   }
 
-  /* Homem menor */
   img.deco-homem {
-    width: 18vw;
+    width: 20vw;
     bottom: 30px;
   }
 
-  /* Mãos ocupam a largura toda */
   img.deco-maos {
     top: 110px;
-    width: 100%;
   }
 
-  .carousel {
-    width: 70%;
-  }
-
-  .sobre-card {
-    width: 90%;
-  }
+  .carousel   { width: 70%; }
+  .sobre-card { width: 90%; }
 
 }
 
@@ -470,11 +448,11 @@ img.deco-maos {
 @media (max-width: 480px) {
 
   .hero-text {
-    padding: 60px 15px 20px;
+    padding: 20px 15px 20px;
   }
 
   .hero-text h2 {
-    margin-top: 60px;
+    margin-top: 20px;
     font-size: 9px;
     letter-spacing: 0.08em;
   }
@@ -483,49 +461,35 @@ img.deco-maos {
     font-size: 13px;
   }
 
-  /* Cortinas bem menores no mobile */
+  /* Cortinas grandes no mobile, bem puxadas pra borda */
   img.cortina-esquerda {
-    width: 44vw;
-    left: -50px;
+    width: 58vw;
+    left: -60px;
     top: -10px;
   }
 
   img.cortina-direita {
-    width: 44vw;
-    right: -50px;
+    width: 58vw;
+    right: -60px;
     top: -10px;
   }
 
-  /* Nuvem e rasgado pequenos */
-  img.deco-nuvem {
-    width: 38vw;
-  }
+  img.deco-nuvem    { width: 42vw; }
+  img.deco-rasagado { width: 40vw; }
 
-  img.deco-rasagado {
-    width: 36vw;
-  }
+  img.deco-relogio  { display: none; }
 
-  /* Relógio escondido no mobile — ocuparia espaço demais */
-  img.deco-relogio {
-    display: none;
-  }
-
-  /* Homem menor ainda */
   img.deco-homem {
-    width: 26vw;
+    width: 28vw;
     bottom: 20px;
   }
 
-  /* Mãos no mobile — reduz opacidade pra não poluir */
   img.deco-maos {
-    top: 80px;
-    width: 100%;
-    opacity: 0.35;
+    top: 60px;
+    opacity: 0.4;
   }
 
-  .carousel {
-    width: 88%;
-  }
+  .carousel { width: 88%; }
 
   .sobre-card {
     width: 94%;
@@ -545,22 +509,16 @@ img.deco-maos {
 
 @media (max-width: 360px) {
 
-  .hero-text h2 {
-    font-size: 8px;
-  }
+  .hero-text h2 { font-size: 8px; }
 
   img.cortina-esquerda,
   img.cortina-direita {
-    width: 48vw;
+    width: 64vw;
   }
 
   img.deco-nuvem,
-  img.deco-rasagado {
-    width: 40vw;
-  }
+  img.deco-rasagado { width: 44vw; }
 
-  img.deco-homem {
-    width: 30vw;
-  }
+  img.deco-homem { width: 32vw; }
 
 }
