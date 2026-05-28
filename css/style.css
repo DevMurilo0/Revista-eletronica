@@ -61,7 +61,7 @@ img.cortina-esquerda {
   left: 0px;
   width: clamp(540px, 56vw, 740px);
   height: auto;
-  transform: translateX(-30%);
+  transform: translateX(-27%);
   z-index: 1;
 }
 
@@ -70,7 +70,7 @@ img.cortina-direita {
   right: 0px;
   width: clamp(540px, 56vw, 740px);
   height: auto;
-  transform: translateX(30%);
+  transform: translateX(27%);
   z-index: 1;
 }
 
@@ -400,24 +400,26 @@ img.deco-maos {
 @media (max-width: 768px) {
 
   .hero-text {
-    padding: 160px 20px 30px;
+    padding: 100px 20px 30px;
   }
 
   .hero-text h2 {
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 11px;
   }
 
   img.cortina-esquerda {
-    width: 62vw;
-    left: -60px;
+    width: 70vw;
+    left: 0;
     top: -20px;
+    transform: translateX(-30%);
   }
 
   img.cortina-direita {
-    width: 62vw;
-    right: -60px;
+    width: 70vw;
+    right: 0;
     top: -20px;
+    transform: translateX(30%);
   }
 
   img.deco-nuvem    { width: 32vw; }
@@ -435,7 +437,7 @@ img.deco-maos {
   }
 
   img.deco-maos {
-    top: 110px;
+    top: 80px;
   }
 
   .carousel   { width: 70%; }
@@ -450,7 +452,7 @@ img.deco-maos {
 @media (max-width: 480px) {
 
   .hero-text {
-    padding: 130px 15px 20px;
+    padding: 80px 15px 20px;
   }
 
   .hero-text h2 {
@@ -464,15 +466,17 @@ img.deco-maos {
   }
 
   img.cortina-esquerda {
-    width: 68vw;
-    left: -30px;
+    width: 80vw;
+    left: 0;
     top: -10px;
+    transform: translateX(-30%);
   }
 
   img.cortina-direita {
-    width: 68vw;
-    right: -30px;
+    width: 80vw;
+    right: 0;
     top: -10px;
+    transform: translateX(30%);
   }
 
   img.deco-nuvem    { width: 42vw; }
@@ -486,7 +490,7 @@ img.deco-maos {
   }
 
   img.deco-maos {
-    top: 80px;
+    top: 60px;
     opacity: 0.4;
   }
 
@@ -512,9 +516,14 @@ img.deco-maos {
 
   .hero-text h2 { font-size: 8px; }
 
-  img.cortina-esquerda,
+  img.cortina-esquerda {
+    width: 85vw;
+    transform: translateX(-30%);
+  }
+
   img.cortina-direita {
-    width: 74vw;
+    width: 85vw;
+    transform: translateX(30%);
   }
 
   img.deco-nuvem,
